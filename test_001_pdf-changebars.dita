@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qxt_bhc_lgb">
+    <title>Data: PDF Changebars</title>
+    <body>
+        <p>para without changebars para without changebars para without changebars para without
+            changebars para without changebars para without changebars para without changebars para
+            without changebars para without changebars para without changebars para without
+            changebars para without changebars para without changebars para without changebars </p>
+        <p audience="user">(@audience="user") para with flagged green background para with flagged
+            green background para with flagged green background para with flagged green background
+            para with flagged green background para with flagged green background para with flagged
+            green background para with flagged green background para with flagged green background
+            para with flagged green background </p>
+        <p product="new">(@product="new") para flagged with red text  para flagged with red text
+            para flagged with red text  para flagged with red text  para flagged with red text  para
+            flagged with red text  para flagged with red text  para flagged with red text  para
+            flagged with red text  para flagged with red text </p>
+
+        <p>para without changebars para without changebars para without changebars para without
+            changebars para without changebars para without changebars para without changebars para
+            without changebars para without changebars para without changebars para without
+            changebars para without changebars para without changebars para without changebars </p>
+        <p rev="rev01">(@rev="rev01") para1 with changebars para1 with changebars para1 with
+            changebars para1 with changebars para1 with changebars para1 with changebars para1 with
+            changebars para1 with changebars para1 with changebars para1 with changebars para1 with
+            changebars </p>
+        <p>para without changebars para without changebars para without changebars para without
+            changebars para without changebars para without changebars para without changebars para
+            without changebars para without changebars para without changebars para without
+            changebars para without changebars para without changebars para without changebars </p>
+        <p platform="linux">(@platform="linux") para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars  para2 with changebars </p>
+    </body>
+</topic>
