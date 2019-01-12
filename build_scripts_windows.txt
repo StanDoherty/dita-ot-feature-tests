@@ -1,0 +1,3 @@
+# Test changebars in PDF
+c:\dita-ot\bin\dita --input=test_001_pdf-changebars.ditamap --format=pdf --filter=test_001_pdf-changebars.ditaval --output=output\pdf
+
