@@ -1,0 +1,17 @@
+<val>
+
+<!-- https://www.dita-ot.org/3.0/reference/preprocess-flagging.html -->
+<!-- Define two flagging properties that give styles (no image) -->
+<prop action="flag" att="audience" style="underline" val="user" backcolor="green"/>
+<prop action="flag" att="product" color="red" val="new"/>
+
+
+<prop action="flag" att="platform" val="linux" changebar="color:red"/>
+
+<!-- https://www.dita-ot.org/3.1/topics/pdf2-creating-change-bars.html -->
+<revprop action="flag" val="rev01" changebar="color:black;style:solid;width:0.5pt"/>
+
+
+
+
+</val>
