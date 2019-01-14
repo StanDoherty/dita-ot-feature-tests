@@ -1,3 +1,18 @@
-# Test changebars in PDF
+# Test-001 changebars in PDF
 c:\dita-ot\bin\dita --input=test_001_pdf-changebars.ditamap --format=pdf --filter=test_001_pdf-changebars.ditaval --output=output\pdf
+# 3.1.2 NOT WORKING
+# 3.2.0 NOT WORKING
 
+
+# Test-002 image flags in PDF and HTML5
+c:\dita-ot\bin\dita --input=test_002_image-flags.ditamap --format=pdf --filter=test_002_image-flags.ditaval --output=output\pdf
+# 3.2.0 WORKING
+c:\dita-ot\bin\dita --input=test_002_image-flags.ditamap --format=html5 --filter=test_002_image-flags.ditaval --output=output\html5
+# 3.2.0 NOT WORKING (see https://github.com/dita-ot/dita-ot/issues/3184)
+# C:\git\dita-ot-feature-tests>c:\dita-ot\bin\dita --input=test_002_image-flags.ditamap 
+# --format=html5 --filter=test_002_image-flags.ditaval --output=output\html5
+# [dita-ot-copy] Attempt to copy images\end_rev.jpg to 
+# C:\git\dita-ot-feature-tests\output\html5\file:\C:\git\dita-ot-feature-tests\images\end_rev.jpg 
+# using NIO Channels failed due to 'The filename, directory name, or volume label syntax is incorrect'.
+# Falling back to streams.
+# Error: The filename, directory name, or volume label syntax is incorrect
