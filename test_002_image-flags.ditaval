@@ -1,0 +1,16 @@
+<val>
+
+  <!-- Define a revision that includes start and end image flags -->
+  <revprop action="flag" style="double-underline" val="rev2">
+    <startflag imageref="images/start_rev.jpg"><alt-text>ssssssssssstart</alt-text></startflag>
+    <endflag imageref="images/end_rev.jpg"><alt-text>eeeeeeeeeeeeeend</alt-text></endflag>
+  </revprop>
+
+  <!-- Define a revision that includes start and end image flags -->
+  <prop att="audience" action="flag" style="double-underline" val="cloud-only">
+    <startflag imageref="images/start_rev.jpg"><alt-text>ssssssssssstart</alt-text></startflag>
+<!--    <endflag imageref="images/end_rev.jpg"><alt-text>eeeeeeeeeeeeeend</alt-text></endflag> -->
+  </prop>
+
+
+</val>
