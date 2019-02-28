@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qxt_bhc_lgb">
+    <title>Topic with badge flagging and references</title>
+    <body>
+        <p>para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags para without image flags
+            para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags </p>
+        <p rev="rev2">(@rev="rev2") para1 with image flags  para1 with image flags  para1 with image
+            flags  para1 with image flags  para1 with image flags  para1 with image flags  para1
+            with image flags  para1 with image flags  para1 with image flags  para1 with image flags
+            para1 with image flags  para1 with image flags  para1 with image flags  para1 with image
+            flags  para1 with image flags  </p>
+        <p>para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags para without image flags
+            para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags </p>
+        <p audience="cloud-only">(@audience="cloud-only") para1 with image flags  para1 with image flags  para1 with image
+            flags  para1 with image flags  para1 with image flags  para1 with image flags  para1
+            with image flags  para1 with image flags  para1 with image flags  para1 with image flags
+            para1 with image flags  para1 with image flags  para1 with image flags  para1 with image
+            flags  para1 with image flags  </p>
+        <p>para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags para without image flags
+            para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags </p>
+        <p product="cloud-compute-yes-section">Here is text to be precede by a flagged badge. </p>
+        <p>- - - - - -  -</p>
+        <p product="cloud-compute-no-section">Here is text to be precede by a flagged badge. </p>
+        <p>- - - - - -  -</p>
+        <p product="cloud-compute-yes-section cloud-compute-no-section">Here is text to be preceded by two flagged badge. </p>
+        
+        
+        <p>para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags para without image flags
+            para without image flags para without image flags para without image flags para without
+            image flags para without image flags para without image flags </p>
+    </body>
+</topic>

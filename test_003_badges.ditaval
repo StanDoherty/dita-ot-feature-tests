@@ -1,0 +1,44 @@
+<val>
+
+  <!-- Define a revision that includes start and end image flags -->
+  <revprop action="flag" style="double-underline" val="rev2">
+    <startflag imageref="images/start_rev.jpg"><alt-text>ssssssssssstart</alt-text></startflag>
+    <endflag imageref="images/end_rev.jpg"><alt-text>eeeeeeeeeeeeeend</alt-text></endflag>
+  </revprop>
+
+  <!-- Define a revision that includes start and end image flags -->
+  <prop att="audience" action="flag" style="double-underline" val="cloud-only">
+    <startflag imageref="images/start_rev.jpg"><alt-text>ssssssssssstart</alt-text></startflag>
+<!--    <endflag imageref="images/end_rev.jpg"><alt-text>eeeeeeeeeeeeeend</alt-text></endflag> -->
+  </prop>
+
+  <!-- The following two badges insert an icon at the beginning of the flagged content -->
+  <!-- with the alt-text string appearing as hover or alt-reader text. -->    
+  <prop att="product" action="flag" val="cloud-compute-yes-section">
+    <startflag imageref="images/start_rev.jpg">
+      <alt-text>This section applies to the CloudSquared Cloud Compute product.</alt-text>
+    </startflag>
+  </prop>
+  <prop att="product" action="flag" val="cloud-compute-no-section">
+    <startflag>
+      <alt-text>[Not Cloud Compute]</alt-text>
+    </startflag>
+  </prop>
+  
+  <!-- The next two badges insert the alt-text string at the beginning of the flagged content. -->
+  <prop att="product" action="flag" val="cloud-net-yes-section">
+    <startflag>
+      <alt-text>[Cloud Net supported] </alt-text>
+    </startflag>
+  </prop>
+  <prop att="product" action="flag" val="cloud-net-no-section">
+    <startflag>
+      <alt-text>[Cloud Net not supported] </alt-text>
+    </startflag>
+  </prop>
+  
+
+
+
+
+</val>
