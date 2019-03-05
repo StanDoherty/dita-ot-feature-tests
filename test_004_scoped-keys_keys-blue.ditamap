@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Sample key definitions - blue</title>
+
+<!-- navigation link to installation presets topic -->
+<!--    <topicref href="server-presets_blue.dita" keys="k_topic_shared_presets"/> -->
+	
+<!-- navigation link to a graphic -->
+<!--    <topicref href="graphics/blue-square.png" keys="k_image_square" navtitle="Blue Square" locktitle="yes" format="png"/> -->
+        
+<!-- library topic containing table with @id -->
+<!--    <topicref href="server-library_blue.dita" keys="k_library_stable"/> -->
+
+<!-- server-name keyword -->
+    <keydef keys="k_kw_server-name" keyscope="blue">
+        <topicmeta>
+            <keywords>
+                <keyword>Big Blue Server</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+<!-- platform-name keyword -->
+    <keydef keys="k_kw_platform-name" keyscope="blue">
+        <topicmeta>
+            <keywords>
+                <keyword>Big Blue Platform</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+</map>

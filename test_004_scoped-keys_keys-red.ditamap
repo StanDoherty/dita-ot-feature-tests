@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Sample key definitions - red</title>
+
+<!-- navigation link to installation presets topic -->
+<!--    <topicref href="server-presets_red.dita" keys="k_topic_shared_presets"/> -->
+	
+<!-- navigation link to a graphic -->
+<!--    <topicref href="graphics/red-square.png" keys="k_image_square" navtitle="Red Square" locktitle="yes" format="png"/> -->
+
+<!-- library topic containing table with @id -->
+<!--   <topicref href="server-library_red.dita" keys="k_library_stable"/> -->
+
+<!-- Unscoped k_kw_server-name keyword -->
+    <keydef keys="k_kw_server-name" keyscope="red">
+        <topicmeta>
+            <keywords>
+                <keyword>Big Red Server</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+<!-- platform-name keyword -->
+    <keydef keys="k_kw_platform-name" keyscope="red">
+        <topicmeta>
+            <keywords>
+                <keyword>Big Red Platform</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+</map>

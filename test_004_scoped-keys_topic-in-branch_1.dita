@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_o4c_zkn_zgb">
+    <title>Non-shared topic within a branch with a keyscope</title>
+    <body>
+        <p>The key value for <codeph>k_kw_server-name</codeph> = <ph keyref="k_kw_server-name"
+            />.</p>
+    </body>
+</topic>

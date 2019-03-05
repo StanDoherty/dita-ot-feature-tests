@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Sample key definitions - green</title>
+
+<!-- navigation link to installation presets topic -->
+<!--    <topicref href="server-presets_green.dita" keys="k_topic_shared_presets"/> -->
+	
+<!-- navigation link to a graphic -->
+<!--    <topicref href="graphics/green-square.png" keys="k_image_square" navtitle="Green Square" locktitle="yes" format="png"/> -->
+
+<!-- library topic containing table with @id -->
+<!--    <topicref href="server-library_green.dita" keys="k_library_stable"/> -->
+
+<!-- server-name keyword -->
+    <keydef keys="k_kw_server-name" keyscope="green">
+        <topicmeta>
+            <keywords>
+                <keyword>Big Green Server</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+<!-- platform-name keyword -->
+    <keydef keys="k_kw_platform-name" keyscope="green">
+        <topicmeta>
+            <keywords>
+                <keyword>Big Green Platform</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+</map>

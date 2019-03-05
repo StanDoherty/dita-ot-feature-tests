@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Root map -- Oracle Blue Server</title>
+    <topicref href="server-group-blue.dita">
+        <topicref href="topic_keys_shared.dita"/>
+    </topicref>
+    <topicref href="appendices-group.dita">
+        <topicref href="server-presets_red.dita"/>
+        <topicref href="server-presets_blue.dita"/>
+        <topicref href="server-presets_green.dita"/>
+    </topicref>
+    <topichead navtitle="Resource-only maps and topics" processing-role="resource-only">
+        <topicref href="submap_keys-blue.ditamap" format="ditamap"/>
+    </topichead>
+</map>

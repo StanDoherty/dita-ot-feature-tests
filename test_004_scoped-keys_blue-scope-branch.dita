@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ejt_xk1_zgb">
+    <title>Map branch with keyscope="blue"</title>
+    <body>
+        <p>Topics in this branch will use the keyscope "blue" defined in the key map
+                <filepath>test_004_scoped-keys_keys-blue.ditamap</filepath> to resolve key names
+                <codeph>k_kw_server-name</codeph> and <codeph>k_kw_platform-name</codeph>. </p>
+    </body>
+</topic>

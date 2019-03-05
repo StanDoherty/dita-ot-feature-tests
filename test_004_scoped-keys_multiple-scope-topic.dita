@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_t1g_fcg_pcb">
+    <title>One topic inheriting both unscoped and scoped key values</title>
+    <body>
+        <p>You can now mix-n-match the unscoped keys introduced in DITA 1.2 with the scoped keys
+            introduced in DITA 1.3.  </p>
+        <section id="section_uq1_21h_zgb">
+            <title>Unscoped (DITA 1.2) keys</title>
+            <p>Without a keyscope prefix, the key name (<codeph>k_kw_server-name</codeph>) inherits
+                its key value from the first key definition in the root map that defines a value for
+                    <codeph>k_kw_server-name</codeph>. In this example, that key map is named
+                    <filepath>test_004_scoped-keys_keys-unscoped.ditamap</filepath>. </p>
+            <codeblock>&lt;!-- Unscoped k_kw_server-name keyword -->
+    &lt;keydef keys="k_kw_server-name">
+        &lt;topicmeta>
+            &lt;keywords>
+                &lt;keyword>Big Unscoped Server&lt;/keyword>
+            &lt;/keywords>
+        &lt;/topicmeta>
+    &lt;/keydef>
+</codeblock>
+            <p>The order in which your key definition maps appear in the root map determines which
+                set of key definitions are used as default values for unscoped key names. If the
+                first key definition map provisions the value "Big Unscoped Server" for the key name
+                    <codeph>k_kw_server-name</codeph>, all key references to
+                    <codeph>k_kw_server-name</codeph> will resolve to the value "Big Unscoped
+                Server", for example <ph keyref="k_kw_server-name"/>. If you move a different key
+                definition map with a different value for <codeph>k_kw_server-name</codeph> above
+                the current key definition map
+                    <filepath>test_004_scoped-keys_keys-unscoped.ditamap</filepath>, all key
+                references to <codeph>k_kw_server-name</codeph> will resolve to that new value. </p>
+        </section>
+        <section id="section_emp_g1h_zgb">
+            <title>Scoped (DITA 1.3) keys</title>
+            <p>To add key scoping to your publication, you must do two things:</p>
+            <ol id="ol_dvv_zyg_zgb">
+                <li>
+                    <p>Add a @keyscope value to your key definitions.</p>
+                    <p>When you add a keyscope prefix to the key reference, you instruct the parser
+                        to resolve the value of a key name to a particular keyscope. For example,
+                        the value for the scoped key reference <codeph>red.k_kw_server</codeph> must
+                        be resolved against a key definition that also specifies a keyscope of
+                        "red". </p>
+                    <codeblock>&lt;!-- Scoped k_kw_server-name keyword -->
+    &lt;keydef keys="k_kw_server-name" <b>keyscope="red"</b>>
+        &lt;topicmeta>
+            &lt;keywords>
+                &lt;keyword><b>Big Red Server</b>&lt;/keyword>
+            &lt;/keywords>
+        &lt;/topicmeta>
+    &lt;/keydef>
+</codeblock>
+                </li>
+                <li>
+                    <p>Add a key scope prefix to your key references, for example <codeph>&lt;kw
+                                kreyref="<b>red</b>.k_kw_server"/></codeph> instead of the unscoped
+                        key reference <codeph>&lt;kw kreyref="k_kw_server"/></codeph>. </p>
+                    <p>This scoped key reference resolves to the value for
+                            <codeph>k_kw_server</codeph> defined in the key definition map
+                            <filepath>test_004_scoped-keys_keys-red.ditamap</filepath>, in this case
+                            <ph keyref="red.k_kw_server-name"/>.</p>
+                </li>
+            </ol>
+            <p>The same key name (<codeph>k_kw_server</codeph>) can resolve to different values in
+                the same root map if you qualify the key references to that key name with a keyscope
+                prefiix. </p>
+            <simpletable frame="all" relcolwidth="1* 1*" id="simpletable_x4k_jq1_zgb">
+                <sthead>
+                    <stentry>Scoped key reference</stentry>
+                    <stentry>Resolved key value</stentry>
+                </sthead>
+                <strow>
+                    <stentry>
+                        <p><codeph>&lt;kw kreyref="<b>red</b>.k_kw_server-name"/></codeph></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph keyref="red.k_kw_server-name"/></p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p><codeph>&lt;kw kreyref="<b>blue</b>.k_kw_server-name"/></codeph></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph keyref="blue.k_kw_server-name"/></p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p><codeph>&lt;kw kreyref="<b>green</b>.k_kw_server-name"/></codeph></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph keyref="green.k_kw_server-name"/></p>
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+		
+        
+    </body>
+</topic>
