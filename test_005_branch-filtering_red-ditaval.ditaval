@@ -1,0 +1,4 @@
+<val>
+ <prop action="exclude" att="product" val="blue"/>
+ <prop action="exclude" att="product" val="green"/> 
+</val>

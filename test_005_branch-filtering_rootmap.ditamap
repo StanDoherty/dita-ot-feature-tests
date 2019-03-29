@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Branch Filtering</title>
+    <topicref href="test_005_branch-filtering_root-topic.dita">
+        <topicref href="test_005_branch-filtering_branch-generic-topic.dita">
+            <topicref href="test_005_branch-filtering_shared-topic.dita"/>
+        </topicref>
+        <topicref href="test_005_branch-filtering_branch-blue-topic.dita">
+            <ditavalref href="test_005_branch-filtering_blue-ditaval.ditaval"/>
+            <topicref href="test_005_branch-filtering_shared-topic.dita"/>
+        </topicref>    
+        <topicref href="test_005_branch-filtering_branch-green-topic.dita">
+            <ditavalref href="test_005_branch-filtering_green-ditaval.ditaval"/>
+            <topicref href="test_005_branch-filtering_shared-topic.dita"/>
+        </topicref>    
+        <topicref href="test_005_branch-filtering_branch-red-topic.dita">
+            <ditavalref href="test_005_branch-filtering_red-ditaval.ditaval"/>
+            <topicref href="test_005_branch-filtering_shared-topic.dita"/>
+        </topicref>
+    </topicref>
+</map>

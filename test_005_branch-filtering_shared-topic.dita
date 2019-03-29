@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ijm_pk4_zgb">
+    <title>Shared topic with blue, green, and red content</title>
+    <body>
+        <p>Generic content (no @product filtering value). Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. </p>
+        <p product="blue">Blue content (@product="blue"). Blue. Blue. Blue. Blue. Blue. Blue. Blue.
+            Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue. Blue.
+            Blue. Blue. Blue.  </p>
+        <p>Generic content (no @product filtering value). Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. </p>
+        <p product="green">Green content (@product="green"). Green. Green. Green. Green. Green.
+            Green. Green. Green. Green. Green. Green. Green. Green. Green. Green. Green. Green.
+            Green. Green. Green. Green. Green. Green. Green. Green. Green. Green. Green. Green.
+            Green. Green. Green. Green. Green. Green. Green. Green. Green. Green. Green. Green.
+            Green. </p>
+        <p>Generic content (no @product filtering value). Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. </p>
+        <p product="red">Red content (@product="red"). Red. Red. Red. Red. Red. Red. Red. Red. Red.
+            Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red.
+            Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red. Red.
+            Red. Red. Red. Red. Red. Red. Red. Red. Red. </p>
+        <p>Generic content (no @product filtering value). Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic. Generic.
+            Generic. Generic. Generic. Generic. Generic. </p>
+    </body>
+</topic>
