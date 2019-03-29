@@ -4,7 +4,6 @@
     <title>test_004_scoped-keys_rootmap.ditamap</title>
     <topichead navtitle="Test content">
         <topicref href="test_004_scoped-keys_multiple-scope-topic.dita"/>
-        <topicref href="test_004_scoped-keys_branch-map-red.ditamap" format="ditamap" keyscope="red"/>
         <topicref href="test_004_scoped-keys_red-scope-branch.dita" keyscope="red">
             <topicref href="test_004_scoped-keys_unscoped-topic.dita"/>
             <topicref href="test_004_scoped-keys_topic-in-branch_1.dita"/>
