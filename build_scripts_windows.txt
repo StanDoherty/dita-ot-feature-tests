@@ -12,3 +12,7 @@ c:\dita-ot\bin\dita --input=./test_003_badges.ditamap --format=html5 --filter=./
 # Test_004: Scoped Keys
 c:\dita-ot\bin\dita --input=./test_004_scoped-keys_rootmap.ditamap --format=pdf --output=output\pdf
 c:\dita-ot\bin\dita --input=./test_004_scoped-keys_rootmap.ditamap --format=html5 --output=output\html5
+
+# Test_005: Branch filtering
+c:\dita-ot\bin\dita --input=./test_005_branch-filtering_rootmap.ditamap --format=pdf --output=output\pdf
+c:\dita-ot\bin\dita --input=./test_005_branch-filtering_rootmap.ditamap --format=html5 --output=output\html5

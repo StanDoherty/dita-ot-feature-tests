@@ -54,7 +54,11 @@ If you want to update or augment what is here, please contact Stan Doherty at st
    * dita-ot-3.x HTML5: Fail (unscoped key values override branch-scoped values). No error. 
    TIP: Uncomment the unscoped key definition map.
 
-## test_005 (coming soon)  
+## test_005: Branch filtering
+*Goal*: The test_005 suite of files exercises the DITA 1.3 feature of branch filtering. There is one shared topic with separate paragraphs tagged with @product="red", @product="blue", and @product="green". This topic is built four times -- once without any ditaval filtering, and three times with specific red, green, and blue <ditavalref> references. There should be four different versions of the same shared topic in the PDF and HTML5 output. 
+*Results*:   
+ * PDF works as advertised. 
+ * HTML5 works as advertised. 
  
 
  
