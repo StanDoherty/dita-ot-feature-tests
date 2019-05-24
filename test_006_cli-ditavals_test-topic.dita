@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dd1_lry_vhb">
+    <title>Test_006: Multiple DITAVALs specified on the command line</title>
+    <body>
+        <p>no <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / </p>
+        <p platform="red"><image placement="inline" href="images/box_red.png" id="image_vb1_tty_vhb">
+                <alt>red square</alt>
+            </image>platform="red" / platform="red" / platform="red" / platform="red" /
+            platform="red" / platform="red" / platform="red" / platform="red" / platform="red" /
+            platform="red" / platform="red" / platform="red" / platform="red" / platform="red" /
+            platform="red" / platform="red" / </p>
+        <p>no <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / </p>
+        <p product="green"><image placement="inline" href="images/box_green.png"
+                id="image_pyf_5ty_vhb">
+                <alt>green square</alt>
+        </image>product="green" / product="green" / product="green" / product="green"/ product="green"
+            / product="green"/ product="green"/ product="green"/ product="green"</p>
+        <p>no <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / </p>
+        <p audience="blue"><image placement="inline" href="images/box_blue.png"
+                id="image_yr3_vty_vhb">
+                <alt>blue square</alt>
+        </image>audience="blue" / audience="blue" /audience="blue" /audience="blue" /audience="blue" 
+            /audience="blue" /audience="blue" /audience="blue" /audience="blue" /audience="blue" / </p>
+        <p>no <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / no
+                <xmlatt>platform</xmlatt> condition / no <xmlatt>platform</xmlatt> condition / </p>
+    </body>
+</topic>

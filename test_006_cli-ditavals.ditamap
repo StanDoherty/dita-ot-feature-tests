@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Test_006: Multiple DITAVALs</title>
+    <topicref href="test_006_cli-ditavals_test-topic.dita"/>
+</map>
