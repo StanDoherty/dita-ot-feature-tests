@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_cdk_syy_vhb">
+    <title>Prism-JS syntax highlighting</title>
+    <body>
+        <p>Each of the following sections test a particular syntax-highlighting setting. Syntax
+            settings that are specific to the Oxygen version of the DITA-OT are noted, otherwise
+            everything pertains to Prism-JS. </p>
+        <p>To install the PRISM-JS DITA-OT plug-in, enter the following.</p>
+        <codeblock>dita -install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip</codeblock>
+        <p>To tag a <xmlelement>codeblock</xmlelement> or <xmlelement>codeph</xmlelement> for syntax
+            highlighting, assign a value to the <xmlatt>outputclass</xmlatt> attribute.</p>
+        <codeblock>&lt;codeblock outputclass="language-javascript">. . . &lt;/codeblock></codeblock>
+        <section id="section_ttw_vyy_vhb">
+            <title>JavaScript </title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="language-javascript"</codeph>.</p>
+            <codeblock outputclass="language-javascript">&lt;script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script></codeblock>
+        </section>
+        <section id="section_lb5_s1z_vhb">
+            <title>Clike</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="language-clike</codeph>".</p>
+            <codeblock outputclass="language-clike">#include &lt;stdio.h>
+int main()
+{
+   // printf() displays the string inside quotation
+   printf("Hello, World!");
+   return 0;
+}</codeblock>
+        </section>
+        <section id="section_dvh_mbz_vhb">
+            <title>HTML</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="markup"</codeph>.</p>
+            <codeblock outputclass="language-markup">&lt;!DOCTYPE html>
+&lt;html>
+&lt;body>
+
+&lt;p>This is a paragraph.&lt;/p>
+&lt;p>This is a paragraph.&lt;/p>
+&lt;p>This is a paragraph.&lt;/p>
+
+&lt;/body>
+&lt;/html></codeblock>
+        </section>
+        <section id="section_s1g_hdz_vhb">
+            <title>XML (Schematron)</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="markup"</codeph>.</p>
+            <codeblock outputclass="language-markup">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+    &lt;sch:pattern name="Check structure">
+        &lt;sch:rule context="Person">
+            &lt;sch:assert test="@Title">The element Person must have a Title attribute&lt;/sch:assert>
+            &lt;sch:assert test="count(*) = 2 and count(Name) = 1 and count(Gender) = 1">The element Person should have the child elements Name and Gender.&lt;/sch:assert>
+            &lt;sch:assert test="*[1] = Name">The element Name must appear before element Gender.&lt;/sch:assert>
+        &lt;/sch:rule>
+    &lt;/sch:pattern>
+    &lt;sch:pattern name="Check co-occurrence constraints">
+        &lt;sch:rule context="Person">
+            &lt;sch:assert test="(@Title = 'Mr' and Gender = 'Male') or @Title != 'Mr'">If the Title is "Mr" then the gender of the person must be "Male".&lt;/sch:assert>
+        &lt;/sch:rule>
+    &lt;/sch:pattern>
+&lt;/sch:schema></codeblock>
+        </section>
+        <section id="section_ajt_5dz_vhb">
+            <title>CSS</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="language-css"</codeph>.</p>
+            <codeblock outputclass="language-css">/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Applies to all &lt;h1>...&lt;/h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* Applies to all elements with &lt;... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with &lt;... id="someid"> specified. */
+#someid { color: green; }</codeblock>
+        </section>
+        <section id="section_el4_21z_vhb">
+            <title>Java (Oxygen only)</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="language-java"</codeph> (Oxygen).</p>
+            <codeblock outputclass="language-java">public class Main {
+    public static void main(String[] args) {
+        System.out.println("This will be printed");
+    }
+}</codeblock>
+        </section>
+        <section id="section_yz3_fbz_vhb">
+            <title>C (Oxygen-only)</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="language-c"</codeph>.</p>
+            <codeblock outputclass="language-c">#include &lt;stdio.h>
+int main()
+{
+   // printf() displays the string inside quotation
+   printf("Hello, World!");
+   return 0;
+}</codeblock>
+        </section>
+        <section id="section_lvd_vzy_vhb">
+            <title>Bourne shell (Oxygen only)</title>
+            <p>Add the following attribute to your <xmlelement>codeblock</xmlelement>:
+                    <codeph>outputclass="language-bourne"</codeph> (Oxygen).</p>
+            <codeblock outputclass="language-bourne">#!/bin/sh
+   # usage: fsplit file1 file2
+   total=0; lost=0
+   while read next
+   do
+   total=`expr $total + 1`
+   case "$next" in
+   *[A-Za-z]*)  echo "$next" >> $1 ;;
+   *[0-9]*)     echo "$next" >> $2 ;;
+   *)           lost=`expr $lost + 1`
+   esac
+   done
+   echo "$total lines read, $lost thrown away"</codeblock>
+        </section>
+    </body>
+</topic>
