@@ -60,5 +60,18 @@ If you want to update or augment what is here, please contact Stan Doherty at st
  * PDF works as advertised. 
  * HTML5 works as advertised. 
  
+## test_006: Multiple DITAVALs on command line
+*Goal*: The test_006 suite of files exercises the DITA-OT command line option if specifying multiple DITAVAL files for the --filter argument.
+
+On Windows, each --filter value (DITAVAL file) requires a semicolon (;)  separator. 
+
+```c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=html5 --output=output\html5 --filter=test_006_cli-ditavals_exclude-platform-red.ditaval;test_006_cli-ditavals_exclude-product-green.ditaval;test_006_cli-ditavals_exclude-audience-blue.ditaval```
+
+MacOS and Linux require the colon (:).
+
+*Results*:   
+ * DITA-OT fails to recognize any DITAVAL after the first. Regardless of platform or transform, it generates the following error:
+ ```Target "test_006_cli-ditavals_exclude-product-green.ditaval" does not exist in the project "DOST".```
+
 
  
