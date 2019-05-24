@@ -23,3 +23,4 @@ c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=html5 --out
 
 # Test_007: Prism-JS syntax highlighting
 c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=pdf --output=output\pdf 
+c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=html5 --output=output\html5 

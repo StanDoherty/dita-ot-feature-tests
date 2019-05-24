@@ -74,4 +74,9 @@ MacOS and Linux require the colon (:).
  ```Target "test_006_cli-ditavals_exclude-product-green.ditaval" does not exist in the project "DOST".```
 
 
+## test_007: Prism-JS syntax highlighting for codeblocks
+*Goal*: The test_007 exercises the Prism-JS DITA-OT plug-in. Once you have installed the plug-in, you can use the @outputclass attribute on &lt;codeblocks> to identify the syntax of that code sample. When you build PDF or HTML subsequently, the code within that &lt;codeblock> reflects basic industry highlighting. 
+*Results*:   
+ * The unmodified plug-in supports HTML. XML, CSS, JavaScript, and C syntax highlighting for both PDF2 and HTML5 transforms. 
+ * A customized version of the plug-in is integrated with Oxygen and offers numerous other syntax options (provided you build through Oxygen's vesion of the DITA-OT). 
  
