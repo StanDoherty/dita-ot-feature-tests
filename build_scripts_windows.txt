@@ -21,5 +21,5 @@ c:\dita-ot\bin\dita --input=./test_005_branch-filtering_rootmap.ditamap --format
 c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=pdf --output=output\pdf --filter=test_006_cli-ditavals_exclude-platform-red.ditaval;test_006_cli-ditavals_exclude-product-green.ditaval;test_006_cli-ditavals_exclude-audience-blue.ditaval
 c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=html5 --output=output\html5 --filter=test_006_cli-ditavals_exclude-platform-red.ditaval;test_006_cli-ditavals_exclude-product-green.ditaval;test_006_cli-ditavals_exclude-audience-blue.ditaval
 
-Error: Target "test_006_cli-ditavals_exclude-product-green.ditaval" does not exist in the project "DOST".
-> Even when I specify a third DITAVAL
+# Test_007: Prism-JS syntax highlighting
+c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=pdf --output=output\pdf 
