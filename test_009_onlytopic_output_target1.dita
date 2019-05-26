@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_target-01">
+    <title>Test_009_onlytopic_output target-01</title>
+    <body>
+        <p>Text</p>
+        <p id="p_target-01">Text for target-01</p>
+
+    </body>
+</topic>

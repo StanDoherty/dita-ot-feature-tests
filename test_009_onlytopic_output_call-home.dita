@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_i3h_2zm_whb">
+    <title>Test_008: Topic to call  valid and broken related links</title>
+    <body>
+        <p>Body text</p>
+        <p>Link: <xref href="test_008_delete-broken-related-links_target1.dita">Link text 1</xref>.</p>
+        <p>Link: <xref href="test_008_delete-broken-related-links_target2.dita">Link text 2</xref>.</p>
+        <p>Link: <xref href="test_008_delete-broken-related-links_target3.dita">Link text 3</xref>.</p>
+        <p>Link: <xref href="test_008_delete-broken-related-links_foo.dita">Link text to foo</xref>.</p>
+    </body>
+    <related-links>
+        <link href="test_008_delete-broken-related-links_target1.dita"/>
+        <link href="test_008_delete-broken-related-links_target2.dita"/>
+        <link href="test_008_delete-broken-related-links_target3.dita"/>
+        <link href="test_008_delete-broken-related-links_foo.dita"/>    
+    </related-links>
+</topic>

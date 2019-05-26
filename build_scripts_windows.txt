@@ -24,3 +24,9 @@ c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=html5 --out
 # Test_007: Prism-JS syntax highlighting
 c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=pdf --output=output\pdf 
 c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=html5 --output=output\html5 
+
+# Test_008: Remove broken related links
+c:\dita-ot\bin\dita --input=./test_008_delete-broken-related-links.ditamap --format=html5 --output=output\html5 --remove-broken-links=true
+
+# Test_009: Generate referenced/conref'd content
+c:\dita-ot\bin\dita --input=./test_009_onlytopic_output.ditamap --format=html5 --output=output\html5

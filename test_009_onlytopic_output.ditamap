@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>test_009: Generate referenced/conef'd content</title>
+    <topicref href="test_008_delete-broken-related-links_call-home.dita"/>
+</map>
