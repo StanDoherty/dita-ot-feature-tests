@@ -29,4 +29,8 @@ c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --fo
 c:\dita-ot\bin\dita --input=./test_008_delete-broken-related-links.ditamap --format=html5 --output=output\html5 --remove-broken-links=true
 
 # Test_009: Generate referenced/conref'd content
-c:\dita-ot\bin\dita --input=./test_009_onlytopic_output.ditamap --format=html5 --output=output\html5
+c:\dita-ot\bin\dita --input=./test_009_onlytopic_output.ditamap --format=html5 --output=output\html5 -Donlytopic.in.map=true
+
+link-crawl
+Specifies whether to crawl only those topic links found in maps, or all discovered topic links. The allowed values are map and topic; the default value is topic.
+
