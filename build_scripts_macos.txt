@@ -1,0 +1,36 @@
+# Test_001: changebars in PDF
+c:\dita-ot\bin\dita --input=test_001_pdf-changebars.ditamap --format=pdf --filter=test_001_pdf-changebars.ditaval --output=output\pdf
+
+# Test_002: image flags in PDF and HTML5
+c:\dita-ot\bin\dita --input=test_002_image-flags.ditamap --format=pdf --filter=test_002_image-flags.ditaval --output=output\pdf
+c:\dita-ot\bin\dita --input=test_002_image-flags.ditamap --format=html5 --filter=test_002_image-flags.ditaval --output=output\html5
+
+# Test_003: Content badges in PDF and HTML5
+c:\dita-ot\bin\dita --input=./test_003_badges.ditamap --format=pdf --filter=./test_003_badges.ditaval --output=output\pdf
+c:\dita-ot\bin\dita --input=./test_003_badges.ditamap --format=html5 --filter=./test_003_badges.ditaval --output=output\html5
+
+# Test_004: Scoped Keys
+c:\dita-ot\bin\dita --input=./test_004_scoped-keys_rootmap.ditamap --format=pdf --output=output\pdf
+c:\dita-ot\bin\dita --input=./test_004_scoped-keys_rootmap.ditamap --format=html5 --output=output\html5
+
+# Test_005: Branch filtering
+c:\dita-ot\bin\dita --input=./test_005_branch-filtering_rootmap.ditamap --format=pdf --output=output\pdf
+c:\dita-ot\bin\dita --input=./test_005_branch-filtering_rootmap.ditamap --format=html5 --output=output\html5
+
+# Test_006: Multiple DITAVALs on command line
+/Users/stanleydoherty/Desktop/dita-ot/bin/dita --input=./test_006_cli-ditavals.ditamap --format=pdf --output=output/pdf --filter=test_006_cli-ditavals_exclude-platform-red.ditaval:test_006_cli-ditavals_exclude-product-green.ditaval:test_006_cli-ditavals_exclude-audience-blue.ditaval
+/Users/stanleydoherty/Desktop/dita-ot/bin/dita --input=./test_006_cli-ditavals.ditamap --format=html5 --output=output/html5 --filter=test_006_cli-ditavals_exclude-platform-red.ditaval:test_006_cli-ditavals_exclude-product-green.ditaval:test_006_cli-ditavals_exclude-audience-blue.ditaval
+
+# Test_007: Prism-JS syntax highlighting
+c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=pdf --output=output\pdf 
+c:\dita-ot\bin\dita --input=./test_007_prism-js-syntax-highlighting.ditamap --format=html5 --output=output\html5 
+
+# Test_008: Remove broken related links
+c:\dita-ot\bin\dita --input=./test_008_delete-broken-related-links.ditamap --format=html5 --output=output\html5 --remove-broken-links=true
+
+# Test_009: Generate referenced/conref'd content
+c:\dita-ot\bin\dita --input=./test_009_onlytopic_output.ditamap --format=html5 --output=output\html5 -Donlytopic.in.map=true
+
+link-crawl
+Specifies whether to crawl only those topic links found in maps, or all discovered topic links. The allowed values are map and topic; the default value is topic.
+
