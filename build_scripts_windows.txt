@@ -31,6 +31,15 @@ c:\dita-ot\bin\dita --input=./test_008_delete-broken-related-links.ditamap --for
 # Test_009: Generate referenced/conref'd content
 c:\dita-ot\bin\dita --input=./test_009_onlytopic_output.ditamap --format=html5 --output=output\html5 -Donlytopic.in.map=true
 
-link-crawl
+# Test-010: Process only topics referenced from maps. 
+c:\dita-ot\bin\dita --input=./test_010_link-crawl.ditamap --format=html5 --output=output\html5 --link-crawl=map
+
+# Test-011: Extended codeblock processing
+c:\dita-ot\bin\dita --input=./test_011_extended-codeblock-processing.ditamap --format=html5 --output=output\html5
+c:\dita-ot\bin\dita --input=./test_011_extended-codeblock-processing.ditamap --format=pdf --output=output\pdf
+
+
+
+
 Specifies whether to crawl only those topic links found in maps, or all discovered topic links. The allowed values are map and topic; the default value is topic.
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_i3h_2zm_whb">
+    <title>Test_010: Link crawl</title>
+    <body>
+        <p>Body text</p>
+        <p>Link: <xref href="test_010_link-crawl_target1.dita">Target1</xref>.</p>
+        <p>Link: <xref href="test_010_link-crawl_target2.dita">Target2</xref>.</p>
+        <p>Link: <xref href="test_010_link-crawl_target3.dita">Target3</xref>.</p>
+    </body>
+</topic>

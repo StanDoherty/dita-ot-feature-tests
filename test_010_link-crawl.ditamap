@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Test_010_link-crawl</title>
+    <topicref href="test_010_link-crawl_topic-with-links.dita"/>
+</map>

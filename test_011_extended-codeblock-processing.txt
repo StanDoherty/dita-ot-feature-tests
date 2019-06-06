@@ -1,0 +1,12 @@
+test_011 extended codeblock processing
+xxx
+xxx
+xxx 
+START-IT
+ a a a a 
+  b b b b
+   c c c c 
+END-IT
+xxx
+xxx
+xxx

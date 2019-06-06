@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_i3h_2zm_whb">
+    <title>Test_011: Extended codeblock processing</title>
+    <body>
+	<section><title>Default codeblock/coderef</title>
+      <codeblock><coderef href="test_011_extended-codeblock-processing.txt"/></codeblock>
+	</section>
+
+	<section><title>codeblock/coderef with line range</title>
+      <codeblock>
+	    <coderef href="test_011_extended-codeblock-processing.txt#line=5,7"/>
+   	  </codeblock>
+	</section>
+
+	<section><title>codeblock/coderef with range tokens</title>
+      <codeblock>
+	    <coderef href="test_011_extended-codeblock-processing.txt#token=START-IT,END-IT"/>
+   	  </codeblock>
+	</section>
+		
+	<section><title>codeblock/coderef with outputclass="show-line-numbers" (PDF Only)</title>
+      <codeblock outputclass="show-line-numbers">
+	    <coderef href="test_011_extended-codeblock-processing.txt"/>
+   	  </codeblock>
+	</section>
+
+	<section><title>codeblock/coderef with outputclass="show-whitespace" (PDF Only)</title>
+      <codeblock outputclass="show-whitespace">
+	    <coderef href="test_011_extended-codeblock-processing.txt"/>
+   	  </codeblock>
+	</section>
+
+
+    </body>
+</topic>
