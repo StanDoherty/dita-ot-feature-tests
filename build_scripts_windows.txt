@@ -38,8 +38,3 @@ c:\dita-ot\bin\dita --input=./test_010_link-crawl.ditamap --format=html5 --outpu
 c:\dita-ot\bin\dita --input=./test_011_extended-codeblock-processing.ditamap --format=html5 --output=output\html5
 c:\dita-ot\bin\dita --input=./test_011_extended-codeblock-processing.ditamap --format=pdf --output=output\pdf
 
-
-
-
-Specifies whether to crawl only those topic links found in maps, or all discovered topic links. The allowed values are map and topic; the default value is topic.
-

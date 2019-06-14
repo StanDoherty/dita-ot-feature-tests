@@ -6,7 +6,7 @@ Please feel free to download and test on your own.
 If you want to update or augment what is here, please contact Stan Doherty at stan@modularwriting.com. Feedback and additional contributions are most welcome. 
 
 ## test_001: Changebar flagging in PDF output
-*Goal*: The test_001 suite of files tests how to generate changebars in PDF output. 
+*Goal*: The test_001 suite of files tests how to generate changebars in PDF output. NOTE: The DITA0OT documentation is now explicit about changebars not being supported with OOTB DITA-OT.
 *Results*: 
  * dita-ot-3.1.2 PDF: Fail - bundled Apache FOP processor does not currently support changebars.
  * dita-ot-3.2.0 PDF: Fail - bundled Apache FOP processor does not currently support changebars.
@@ -63,15 +63,19 @@ If you want to update or augment what is here, please contact Stan Doherty at st
 ## test_006: Multiple DITAVALs on command line
 *Goal*: The test_006 suite of files exercises the DITA-OT command line option if specifying multiple DITAVAL files for the --filter argument.
 
-On Windows, each --filter value (DITAVAL file) requires a semicolon (;)  separator. 
 
-```c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=html5 --output=output\html5 --filter=test_006_cli-ditavals_exclude-platform-red.ditaval;test_006_cli-ditavals_exclude-product-green.ditaval;test_006_cli-ditavals_exclude-audience-blue.ditaval```
 
-MacOS and Linux require the colon (:).
+MacOS and Linux require the colon (:) without quotation marks. 
 
 *Results*:   
- * DITA-OT fails to recognize any DITAVAL after the first. Regardless of platform or transform, it generates the following error:
- ```Target "test_006_cli-ditavals_exclude-product-green.ditaval" does not exist in the project "DOST".```
+ * On Windows - success. Each --filter value (DITAVAL file) requires a semicolon (;) separator character AND (undocumented) surrounding quotation marks.  
+
+```c:\dita-ot\bin\dita --input=./test_006_cli-ditavals.ditamap --format=html5 --output=output\html5 --filter="test_006_cli-ditavals_exclude-platform-red.ditaval;test_006_cli-ditavals_exclude-product-green.ditaval;test_006_cli-ditavals_exclude-audience-blue.ditaval"```
+
+ 
+ * On Linux/MacOS - success. 
+
+```./dita --input=./test_006_cli-ditavals.ditamap --format=html5 --output=output\html5 --filter=test_006_cli-ditavals_exclude-platform-red.ditaval;test_006_cli-ditavals_exclude-product-green.ditaval;test_006_cli-ditavals_exclude-audience-blue.ditaval```
 
 
 ## test_007: Prism-JS syntax highlighting for codeblocks
@@ -80,3 +84,8 @@ MacOS and Linux require the colon (:).
  * The unmodified plug-in supports HTML. XML, CSS, JavaScript, and C syntax highlighting for both PDF2 and HTML5 transforms. 
  * A customized version of the plug-in is integrated with Oxygen and offers numerous other syntax options (provided you build through Oxygen's vesion of the DITA-OT). 
  
+## test_011: Link crawl
+Write-up forthcoming
+
+## test_012: Extended codeblock processing
+Write-up forthcoming
