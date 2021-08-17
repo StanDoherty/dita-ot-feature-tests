@@ -1,7 +1,7 @@
 # dita-ot-feature-tests
 This collection of sample files exercises features in DITA 1.3 as they are visible in a DITA-compliant editor (currently Oxygen Editor 21.0) and in DITA-OT output (currently dita-ot-3.3). 
 
-Please feel free to download and test on your own.
+Please download and test on your own.
 
 If you want to update or augment what is here, please contact Stan Doherty at stan@modularwriting.com. Feedback and additional contributions are most welcome. 
 
